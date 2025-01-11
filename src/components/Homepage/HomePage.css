@@ -1,0 +1,105 @@
+/* Ensure the banner container takes the full height of the screen */
+.banner_container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .hm_banner {
+    position: relative;
+    width: 100%;
+    height: 70%; /* Adjust as needed for the banner height */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .content_banner {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .banner-text {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 75px;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-desc {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0 4rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .content_banner {
+      width: 70%; /* Increase width on smaller screens */
+    }
+  
+    .banner-text {
+      font-size: 3rem; /* Smaller font size for tablet devices */
+      line-height: 60px;
+    }
+  
+    .banner-desc {
+      font-size: 1rem;
+      padding: 0 2rem; /* Reduce padding for smaller screens */
+      line-height: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content_banner {
+      width: 85%; /* Even larger width for mobile */
+    }
+  
+    .banner-text {
+      font-size: 2.5rem; /* Further reduce font size for mobile */
+      line-height: 50px;
+    }
+  
+    .banner-desc {
+      font-size: 1rem;
+      padding: 0 0.4rem; /* Reduce padding for small screens */
+      line-height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content_banner {
+      width: 97%; /* Full width for very small screens */
+    }
+  
+    .banner-text {
+      font-size: 2.2rem; /* Smallest font size for very small screens */
+      line-height: 40px;
+    }
+  
+    .banner-desc {
+      font-size: 0.9rem;
+      padding: 0 1rem; /* Small padding */
+    }
+  }
+  
