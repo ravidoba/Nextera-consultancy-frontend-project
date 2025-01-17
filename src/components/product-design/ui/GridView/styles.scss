@@ -1,0 +1,61 @@
+.approach-section {
+    width: 95%;
+    margin: 1rem auto;
+
+
+    @media (min-width: 768px) {
+        padding: 2rem;
+    }
+    @media (max-width: 1090px) {
+        padding: 0rem;
+    }
+
+
+    @media screen and (max-width: 650px ) {
+        padding: 0;
+        width: 95%;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+      gap: 1.5rem;
+      @media (max-width: 1090px) {
+      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      }
+  
+      .grid-item {
+        padding: 2rem;
+        border: 1px solid #767676;
+        transition: box-shadow 0.3s ease-in-out;
+        position: relative;
+  
+        .step-number {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #1f2937;
+          position: absolute;
+          top: -1.2rem;
+          background-color: white;
+          padding: 5px 10px;
+        }
+  
+        .step-title {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #1f2937;
+          margin-bottom: 0.75rem;
+        }
+  
+        .step-description {
+          font-size: 1.1rem;
+          color: #4b5563;
+          text-align: left;
+          text-wrap: balance;
+        }
+      }
+    }
+  }
+  

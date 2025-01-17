@@ -1,0 +1,97 @@
+.portfolio-grid {
+  padding-top: 3rem;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (max-width:1090px) {
+      width: 95%;
+    }
+
+    @media screen and (max-width:950px) {
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+
+    @media screen and (max-width:420px) {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .project-card {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        .overlay{
+          display: flex;
+        }
+      }
+
+      .overlay {
+        bottom: 0px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: white;
+        display: none;
+        transition: 0.3s ease-in-out;
+
+        .right {
+          flex: 0.3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .left {
+          flex: 1;
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          padding: 15px 25px;
+          
+          .project-title{
+            font-weight: 800;
+            font-size: 25px;
+          }
+          .list{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            li{
+              font-weight: 400;
+              font-size: 16px;
+              &:first-child{
+                list-style: none;
+              }
+            }
+          }
+        }
+      }
+
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        .image {
+          // position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .project-title {
+        margin-top: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+
+    
+
+
+
+    @media screen and (max-width:1090px) {
+        width: 95%;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form-section {
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form-h {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                padding: unset;
+                margin: unset;
+                font-size: 18px;
+                font-weight: 900;
+                color: black;
+            }
+
+            .form-group-h {
+                position: relative;
+
+                input,
+                textarea {
+                    width: 100%;
+         
+                }
+
+                textarea {
+                    resize: none;
+                    height: 100px;
+                    width: 100%;
+                    padding:15px 0.75rem;
+                    border: 2.5px solid #717171;
+                    font-size: 1rem;
+                    transition: border-color 0.2s;
+                    border-radius: 0;
+                }
+            }
+
+            button {
+                padding: 0.75rem;
+                background-color: #000;
+                color: #fff;
+                border: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .office-details-section-p {
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .office-details {
+            border-left: 1px solid rgb(177, 177, 177);
+            padding-left: 2rem;
+            height: 100%;
+
+
+            @media (max-width: 768px) {
+                padding: 0;
+            }
+
+            @media (max-width: 768px) {
+                border: none;
+            }
+
+            h3 {
+                padding: unset;
+                margin: unset;
+                font-size: 28px;
+                font-weight: 900 !important;
+                color: black;
+                margin-bottom: 1rem;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .office {
+                margin-bottom: 1.5rem;
+                width: 50%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    margin: unset;
+                    font-weight: 900;
+                    margin-bottom: 12px;
+                    padding: 5px 0;
+                    color: black;
+                    border-bottom: 1px solid rgba(207, 198, 198, 0.845);
+                }
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0.25rem;
+                    color: #353535;
+
+                    a {
+                        color: black;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

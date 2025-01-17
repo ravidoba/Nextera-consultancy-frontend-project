@@ -1,0 +1,43 @@
+.TermsCondition {
+    padding: 1rem;
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+
+    @media (min-width: 768px) {
+            padding: 4rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        padding: 0;
+        width: 95%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h4{
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+
+            @media screen and (max-width:768px) {
+                font-size: 14px;
+            }
+        }
+
+        ul {
+            @media screen and (max-width:768px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

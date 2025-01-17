@@ -1,0 +1,313 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    padding:0 6rem ;
+}
+
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .logo a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    padding: 0 6rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: black;
+    @media screen and (max-width:1130px) {
+      padding: 0 5rem
+    }
+    @media screen and (max-width:1093px) {
+      padding: 0 4rem
+    }
+    @media screen and (max-width:900px) {
+      display: none !important;
+    }
+  }
+
+
+  .navLinks a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #757678 !important;
+    &:hover{
+      color: black !important;
+      font-weight: 600;
+    }
+  }
+  .navLink.active{
+    color: black !important;
+    font-weight: 600;
+  }
+
+  .start_button{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .start_button .startProject {
+    background-color: #262626;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: auto;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownButton {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .arrow {
+    font-size: 0.8rem;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    color: #fff;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 4644;
+    border-radius: 4px;
+    top: 100px;
+    padding: 4rem 10rem;
+    height: 400px;
+    @media screen and (max-width:900px) {
+      display: none !important;
+    }
+    @media screen and (max-width:1255px) {
+      padding: 4rem 5rem;
+    }
+    @media screen and (max-width:1093px) {
+      padding: 3rem 2rem;
+    height: 350px;
+    }
+    .left{
+      flex: 0.5;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      width: 100%;
+      a{
+        text-decoration: none;
+        &:hover{
+          color: gray;
+          font-weight: 600; 
+        }
+      }
+    }
+    .right{
+      flex: 1;
+      img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+    }
+  }
+  
+  .dropdownContent.show {
+    display: flex;
+  }
+  
+  .dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+ 
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: black;
+    z-index: 888;
+    display: none;
+    right: -9999px;
+    transition: 0.3s ease-in-out;
+    color: white; 
+  }
+  .close_Sidebar{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .sidebar.show{
+    right: 0;
+  }
+  .sidebar-menu {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  
+  .sidebar-menu > li {
+    padding: 18px 10px ;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  .submenu {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0 15px;
+    display: none;
+    transition: 0
+    3s ease-in-out;
+    padding: unset;
+    margin: unset;
+    padding-inline-start: unset;
+  }
+  .submenu.show{
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-menu .service_drop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .submenu li{
+    padding: 18px 15px ;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+  
+  
+  @media (max-width: 1060px) {
+    .navbar{
+      padding: 0 2rem;
+    }
+    .navLinks{
+      padding-left: 2rem;
+      padding-right: unset;
+    }
+
+  }
+  @media screen and (max-width:960px) {
+    .navLinks{
+      padding-left: 4rem;
+      padding-right: unset;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .navLinks{
+      display: none;
+    }
+    .start_button{
+      display: none;
+    }
+    .hamburger{
+      display: flex;
+    }
+    .sidebar{
+      display: flex;
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .navbar{
+    padding:0 0.4rem ;
+    }
+    
+  
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .navLinks.active {
+      display: flex;
+    }
+  
+    .dropdown {
+      width: 100%;
+    }
+  
+    .dropdownContent {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      margin-top: 0.5rem;
+    }
+  
+    .dropdownContent.show {
+      display: block;
+    }
+  
+    .startProject {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  

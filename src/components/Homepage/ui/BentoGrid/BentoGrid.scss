@@ -1,0 +1,89 @@
+.bento-layout {
+    width: 90%;
+    margin: 2rem auto;
+
+    @media screen and (max-width:1090px) {
+        width: 95%;
+    }
+
+
+    .bento-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width:777px) {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "item-1 item-2"
+                "item-3 item-4"
+                "item-5 item-6";
+        }
+
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "item-1 item-2 item-3"
+                "item-4 item-4 item-5"
+                "item-6 item-6 item-6";
+        }
+
+        .bento-item {
+            border: 1px solid #8a8888;
+            padding: 1.5rem;
+        transition: 0.3s ease-in;
+            &:hover {
+                background-color: black !important;
+                color: white !important;
+                p,h3{
+                color: white !important;
+
+            }
+            }
+
+            .feature-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: #000;
+            }
+
+            .feature-description {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #555;
+            }
+        }
+
+        /* Grid-specific styles for individual items */
+        .item-1 {
+            grid-area: item-1;
+        }
+
+        .item-2 {
+            grid-area: item-2;
+        }
+
+        .item-3 {
+            grid-area: item-3;
+        }
+
+        .item-4 {
+            grid-area: item-4;
+        }
+
+        .item-5 {
+            grid-area: item-5;
+        }
+
+        .item-6 {
+            grid-area: item-6;
+        }
+    }
+}

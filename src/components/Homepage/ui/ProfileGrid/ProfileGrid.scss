@@ -1,0 +1,25 @@
+.ProfileGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
+    width: 90%;
+    margin: 2rem auto;
+    gap: 1rem;
+
+    @media screen and (max-width:1090px) {
+        width: 95%;
+    }
+    @media screen and (max-width:768px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .pg_box{
+        flex: 1;
+        height: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #887f7fc3;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

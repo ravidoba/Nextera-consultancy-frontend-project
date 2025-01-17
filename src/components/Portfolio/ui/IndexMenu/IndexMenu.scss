@@ -1,0 +1,96 @@
+.indexMenu {
+    gap: 1rem;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 20px 0;
+
+    @media screen and (max-width:1090px) {
+        width: 95%;
+    }
+
+    .main_menu {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 3rem;
+
+        @media screen and (max-width:968px) {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+
+        .index_title {
+            font-size: 54px;
+            line-height: 70px;
+            font-weight: 600;
+            @media screen and (max-width:968px) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+        }
+
+        .index_col {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                list-style: none;
+                margin-top: 2rem;
+                padding: 0;
+
+                @media screen and (max-width:968px) {
+                    margin-top: 1rem;
+                }
+
+                li {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    padding: 18px 0;
+                    border-bottom: 1px solid black;
+
+                    @media screen and (max-width:968px) {
+                        font-size: 20px;
+                        line-height: 28px;
+                        padding: 14px 0;
+                    }
+                }
+            }
+        }
+
+        .index_details {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                margin-top: 2rem;
+                list-style: none;
+
+                @media screen and (max-width:968px) {
+                    margin-top: 1rem;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 36px;
+                    font-weight: 400;
+
+                    @media screen and (max-width:968px) {
+                        font-size: 15px;
+                        line-height: 28px;
+                        padding: 14px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    //     @media screen and (max-width:950px) {
+    //       grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    //     }
+
+    //     @media screen and (max-width:420px) {
+    //       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    // }
+}

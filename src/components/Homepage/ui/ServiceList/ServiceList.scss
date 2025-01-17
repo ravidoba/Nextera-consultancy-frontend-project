@@ -1,0 +1,191 @@
+.service-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 95%;
+    margin: 1rem auto;
+
+
+    @media (min-width: 768px) {
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 1090px) {
+        padding: 0;
+        width: 95%;
+    }
+
+    .service-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        transition: 0.3s ease-in;
+        @media screen and (max-width:968px) {
+            flex-direction: column !important;
+        }
+
+        &:hover {
+            background-color: black;
+            color: white !important;
+
+            p {
+                color: white !important;
+            }
+
+            .service-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000 !important;
+                background-color: #fff !important;
+            }
+            .serv_iccon{
+                ul{
+                    visibility: visible;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 1rem;
+        }
+
+        @media screen and (max-width:420px) {
+            padding: 0.5rem;
+        }
+
+        .id {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .service-id {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-right: 1rem;
+                margin-top: 0.1rem;
+            }
+        }
+
+        .service-header {
+            flex: 0.5;
+            @media screen and (max-width:968px) {
+flex: 1;
+            }
+            .head {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .service-title {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    margin: 0;
+
+                    @media screen and (max-width:768px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .service-description {
+                    flex: 3;
+                    font-size: 1rem;
+                    color: #555;
+                    margin: 0.5rem 0;
+                    width: 95%;
+
+
+                    @media screen and (max-width:768px) {
+                        margin: 0.2rem 0;
+                        font-size: 0.8rem;
+                    }
+
+                    @media (min-width: 768px) {
+                        margin: 0;
+                    }
+                }
+            }
+
+
+        }
+
+        .serv_iccon {
+            height: inherit;
+            flex: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+     @media screen and (max-width:968px) {
+     justify-content: space-between;
+     width: 100%;
+     flex: 1 !important;
+            }
+
+            ul {
+                visibility: hidden;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                gap: 1rem;
+                flex: 1;
+                justify-content: flex-end;
+                @media screen and (max-width:968px) {
+                    justify-content: flex-start;
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+                svg {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .btn_s {
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            flex: 0.3;
+
+            @media screen and (max-width:768px) {
+                padding: 3rem 0;
+            }
+
+            .service-button {
+                transition: 0.3s ease-in-out;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #000;
+                color: #fff;
+                border: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+
+                @media screen and (max-width:768px) {
+                    width: 30px;
+                    height: 30px;
+
+                    .arrow {
+                        font-size: 1rem;
+                    }
+                }
+
+                .arrow {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+}
