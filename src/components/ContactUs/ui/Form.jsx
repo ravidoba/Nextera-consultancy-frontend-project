@@ -78,13 +78,12 @@ const Form = () => {
         <div className="office-details">
           <h3>Our Offices</h3>
           <div className="office">
-            <h2>Ahmedabad, India</h2>
+            <h2>Navi Mumbai, India</h2>
             <div className="line_footer" />
-            <p>4011, 4th Floor, Gulmohar Park </p>
-            <p>Mall, Satellite Rd, opposite</p>
-            <p>Satellite,</p>
-            <p>Ahmedabad, Gujarat 380015</p>
-            <p>Email: <a href="mailto:NextEra Consultancy@gmail.com" className="footer-link">NextEra Consultancy@gmail.com</a></p>
+            <p>Address: 65, Palm Beach Rd, Shahbaz Village</p>
+            <p>Sector 11, CBD Belapur,</p>
+            <p>Navi Mumbai, Maharashtra 400611</p>
+            <p>Email: <a href="mailto:Contact.NextEraConsultancy.com" className="footer-link">Contact.NextEraConsultancy.com</a></p>
           </div>
         </div>
       </div>
