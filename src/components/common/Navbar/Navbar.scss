@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     height: 100px;
-    padding:0 6rem ;
+    padding:0 3rem;
 }
 
   
@@ -311,3 +311,9 @@
   }
   
   
+  .navbar-logo {
+    height: 40px;  // Adjust size as needed
+    width: auto;
+    margin-right: 10px; // Adds spacing between logo and text
+    vertical-align: middle;
+}
