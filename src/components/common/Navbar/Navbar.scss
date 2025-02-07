@@ -1,23 +1,36 @@
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     height: 100px;
-    padding:0 3rem;
-}
+    padding: 0 3rem;
+    background-color: white;
+  }
 
-  
+
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; // Add spacing between image and text
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
   }
-  .logo a{
+
+  .logo a {
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
   }
-  
+
+  .logo img {
+    max-height: 60px; // Ensure the logo fits inside the navbar
+    width: auto;
+    flex-shrink: 0;
+  }
+
   .navLinks {
     display: flex;
     align-items: center;
@@ -28,23 +41,26 @@
     line-height: 24px;
     font-weight: 400;
     color: black;
+
     @media screen and (max-width:1130px) {
       padding: 0 5rem
     }
+
     @media screen and (max-width:1093px) {
       padding: 0 4rem
     }
+
     @media screen and (max-width:900px) {
       display: none !important;
     }
   }
 
 
-  .navLinks a{
+  .navLinks a {
     text-decoration: none;
     color: inherit;
   }
-  
+
   .navLink {
     text-decoration: none;
     transition: color 0.3s ease;
@@ -52,22 +68,25 @@
     line-height: 24px;
     font-weight: 400;
     color: #757678 !important;
-    &:hover{
+
+    &:hover {
       color: black !important;
       font-weight: 600;
     }
   }
-  .navLink.active{
+
+  .navLink.active {
     color: black !important;
     font-weight: 600;
   }
 
-  .start_button{
+  .start_button {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+
   .start_button .startProject {
     background-color: #262626;
     color: #fff;
@@ -76,14 +95,14 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
-  
 
-  
+
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdownButton {
     background: none;
     border: none;
@@ -93,11 +112,11 @@
     align-items: center;
     gap: 0.5rem;
   }
-  
+
   .arrow {
     font-size: 0.8rem;
   }
-  
+
   .dropdownContent {
     display: none;
     position: absolute;
@@ -106,40 +125,48 @@
     min-width: 100%;
     left: 0;
     right: 0;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 4644;
     border-radius: 4px;
     top: 100px;
     padding: 4rem 10rem;
     height: 400px;
+
     @media screen and (max-width:900px) {
       display: none !important;
     }
+
     @media screen and (max-width:1255px) {
       padding: 4rem 5rem;
     }
+
     @media screen and (max-width:1093px) {
       padding: 3rem 2rem;
-    height: 350px;
+      height: 350px;
     }
-    .left{
+
+    .left {
       flex: 0.5;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: center;
       width: 100%;
-      a{
+
+      a {
         text-decoration: none;
-        &:hover{
+
+        &:hover {
           color: gray;
-          font-weight: 600; 
+          font-weight: 600;
         }
       }
     }
-    .right{
+
+    .right {
       flex: 1;
-      img{
+
+      img {
         width: 100%;
         object-fit: cover;
         height: 100%;
@@ -147,23 +174,24 @@
 
     }
   }
-  
+
   .dropdownContent.show {
     display: flex;
   }
-  
+
   .dropdownContent a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
- 
+
   .hamburger {
     display: none;
     cursor: pointer;
   }
-  .sidebar{
+
+  .sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -175,17 +203,20 @@
     display: none;
     right: -9999px;
     transition: 0.3s ease-in-out;
-    color: white; 
+    color: white;
   }
-  .close_Sidebar{
+
+  .close_Sidebar {
     position: absolute;
     right: 10px;
     top: 30px;
     cursor: pointer;
   }
-  .sidebar.show{
+
+  .sidebar.show {
     right: 0;
   }
+
   .sidebar-menu {
     list-style-type: none;
     margin: 0;
@@ -194,85 +225,92 @@
     width: 100%;
     margin-top: 4rem;
   }
-  
-  .sidebar-menu > li {
-    padding: 18px 10px ;
+
+  .sidebar-menu>li {
+    padding: 18px 10px;
     cursor: pointer;
     border-bottom: 1px solid white;
-    a{
+
+    a {
       text-decoration: none;
       color: inherit;
     }
   }
-  
+
   .submenu {
     list-style-type: none;
     margin: 0;
     width: 100%;
     padding: 0 15px;
     display: none;
-    transition: 0
-    3s ease-in-out;
+    transition: 0 3s ease-in-out;
     padding: unset;
     margin: unset;
     padding-inline-start: unset;
   }
-  .submenu.show{
+
+  .submenu.show {
     display: flex;
     flex-direction: column;
   }
-  .sidebar-menu .service_drop{
+
+  .sidebar-menu .service_drop {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .submenu li{
-    padding: 18px 15px ;
+  .submenu li {
+    padding: 18px 15px;
     cursor: pointer;
     border-bottom: 1px solid white;
   }
-  
-  
+
+
   @media (max-width: 1060px) {
-    .navbar{
+    .navbar {
       padding: 0 2rem;
     }
-    .navLinks{
+
+    .navLinks {
       padding-left: 2rem;
       padding-right: unset;
     }
 
   }
+
   @media screen and (max-width:960px) {
-    .navLinks{
+    .navLinks {
       padding-left: 4rem;
       padding-right: unset;
     }
   }
 
   @media screen and (max-width:900px) {
-    .navLinks{
+    .navLinks {
       display: none;
     }
-    .start_button{
+
+    .start_button {
       display: none;
     }
-    .hamburger{
+
+    .hamburger {
       display: flex;
     }
-    .sidebar{
+
+    .sidebar {
       display: flex;
     }
   }
 
-  
+
   @media (max-width: 768px) {
-    .navbar{
-    padding:0 0.4rem ;
+    .navbar {
+      padding: 0 0.4rem;
     }
-    
-  
+
+
     .navLinks {
       display: none;
       flex-direction: column;
@@ -284,36 +322,28 @@
       padding: 1rem;
       gap: 1rem;
     }
-  
+
     .navLinks.active {
       display: flex;
     }
-  
+
     .dropdown {
       width: 100%;
     }
-  
+
     .dropdownContent {
       position: static;
       width: 100%;
       box-shadow: none;
       margin-top: 0.5rem;
     }
-  
+
     .dropdownContent.show {
       display: block;
     }
-  
+
     .startProject {
       width: 100%;
       text-align: center;
     }
   }
-  
-  
-  .navbar-logo {
-    height: 40px;  // Adjust size as needed
-    width: auto;
-    margin-right: 10px; // Adds spacing between logo and text
-    vertical-align: middle;
-}
