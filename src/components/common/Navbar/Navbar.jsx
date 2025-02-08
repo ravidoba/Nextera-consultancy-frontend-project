@@ -5,7 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-
+import LogoImage from "../../../../public/EFFIWORK-BLACK-LOGO.png";
 export default function Navbar({ bg }) {
     const [isOpen, setIsOpen] = useState(false)
     const [isServicesOpen, setIsServicesOpen] = useState(false)
@@ -42,6 +42,7 @@ export default function Navbar({ bg }) {
         <nav className={"navbar"}>
             <div className={"logo"}>
                 <NavLink to={'/'}>
+                    <img src="/EFFIWORK-BLACK-LOGO.png" alt="NextEra Consultancy Logo" />
                     NextEra Consultancy
                 </NavLink>
             </div>

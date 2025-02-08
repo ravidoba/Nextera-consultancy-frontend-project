@@ -35,8 +35,7 @@ export const RenovetaWorkList = {
     overview: `Renoveta Work, a global leader in home improvement retail, partnered with us to design and develop a logistics management platform. The platform's key goal was to identify the most cost-effective and time-efficient transportation options using third-party vendors. Additionally, it was designed to track shipment status and live locations while facilitating EDI message communication to vendors with detailed shipment information.
 To simplify invoicing, the platform generated and dispatched invoices to vendors upon shipment. Built to be reliable, fast, and scalable, it efficiently handled Renoveta Work's high-volume logistics operations. Collaborating closely with Renoveta Work, we delivered a tailored and effective solution to meet their logistics management needs.`
     ,
-    // bg: new URL('../assets/assets/Renovate Works/image 39.png', import.meta.url).href,
-    bg: "https://nextera-consaltancy-aws-s3-bucket-1.s3.ap-south-1.amazonaws.com/CaseStudy1.png",
+    bg: new URL('../assets/assets/Renovate Works/image 39.png', import.meta.url).href,
     flexlist: [
         {
             title: `Challenges`,
