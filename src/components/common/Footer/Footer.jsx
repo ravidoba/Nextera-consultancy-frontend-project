@@ -25,10 +25,10 @@ export default function Footer() {
             <div className="company-info">
               <div>
                 <div className="address-info">
-                  <p className="address-location">Ahmedabad, India</p>
+                  <p className="address-location">Navi Mumbai, India</p>
                   <div className="line_footer" />
-                  <p>Address: A-2, 2nd Floor, Ankur Complex</p>
-                  <p>Ahmedabad, Gujarat, India, 380013</p>
+                  <p>Address: 604, Kedar Complex, Sector 20</p>
+                  <p>Navi Mumbai, Maharashtra 410208</p>
                   <p>Email: <a href="mailto:contact@nexteraconsultancy.com" className="footer-link">contact@nexteraconsultancy.com</a></p>
                 </div>
               </div>

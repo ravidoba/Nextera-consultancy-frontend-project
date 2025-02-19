@@ -10,8 +10,8 @@
 
 .logo {
   display: flex;
-  align-items: center; // Ensures vertical alignment
-  gap: 10px; // Adds spacing between logo image and text
+  align-items: center; 
+  gap: 10px; 
   cursor: pointer;
 }
 
@@ -25,10 +25,10 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
   object-fit: contain;
-  display: block; // Prevents extra space below the image
+  display: block; 
 }
 
 .navLinks {
